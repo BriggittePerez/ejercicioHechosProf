@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORMULARIOS JS 1</title>
+    <style>
+        .tx{
+            border: 2px dotted blue;
+            color: orange;
+        }
+        .tx:hover{
+            text-shadow: 2px 2px grey, 2px 2px coral, 2px 2px red, 2px 2px indigo;
+            box-shadow: 5px 5px 10px blue;
+            border-radius: 15px;
+            padding: 0.2rem;
+        }
+    </style>
+</head>
+<body>
+    <!-- USO DE FORMULARIO PARA SIMULAR UN ENLACE -->
+    <!-- <form action="https://www.google.es" >
+        <button>Ir a Google!</button>
+    </form> -->
+    <form action="" method="get">
+    <legend>MI FORMULARIO</legend>
+        <!-- ETIQUETA ASOCIADA AL CONTROL MEDIANTE 'name' -->
+        <label for="txtEscribe">User:&nbsp; </label>    
+        <input type="text" name="txtEscribe" placeholder="Escribe tu mail aquí..." size="15" minlength="4" maxlength="10">
+        <hr>
+        <label for="pswLogin">Login:&nbsp; </label>    
+        <input type="password" name="pswLogin" id="" placeholder="Escribe login aquí..." size="15" minlength="4" maxlength="8" required>
+        <hr>
+        <label for="numEdad">Edad:&nbsp; </label>    
+        <input type="number" name="numEdad" id="" value="18" min="18" max="65">
+        <label for="emaCorreo">Correo electronico:&nbsp; </label>    
+        <input type="email" name="emaCorreo" id="">
+        <input type="checkbox" name="" id="">
+        <input type="radio" name="" id="">
+        <select name="" id="">
+            <option value="Opcion 1">Opcion 1</option>
+            <option value="Opcion 2">Opcion 2</option>
+        </select>
+        <input type="color" name="" id="">
+        <input type="range" name="" id="" step="5" value="0">
+        <input type="reset" value="reset">     
+
+
+        <!-- ESTE CONTROL ES OBLIGATORIO SI QUEREMOS ENVIAR EL FORMULARIO AL SERVIDOR -->
+        <input type="submit" value="ENVIAR FORM">
+    </form>
+</body>
+</html>

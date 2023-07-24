@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SELECTORES CSS</title>
+    <style>
+        *{  /* TODOS LOS ELEMENTOS/ ETIQUETAS HTML*/
+            box-sizing: border-box;
+        }
+        body{
+            margin: 0;
+        }
+        div, p{
+            width: 80vh;
+            height: 10vh;
+        }
+        p.texto p.fondo1{ /* los parr*/
+            background-color: coral;­
+        }
+        .flexBox{
+            display: flex;
+        }
+        .border1{
+            border: 1px solid black;
+        }
+        .foto[alt="logotipo"]{ /* aplica la propiedad a la etiqueta que tenga el nombre de este alt, no toma en cuenta el nombre de la clase*/
+            width: 10rem;
+            height: 10rem;
+            border: 5px dotted pink;
+        }
+        .foto{
+            border: 1px solid blue;
+        }
+        img{
+            width: 25%;
+            height: 25%;
+        }
+
+        /* ADYACENTE CONTIGUO (HERMANOS - SIBLINGS)*/
+        div+p{
+            color: violet;
+        }
+        p+p{
+            background-color: azure;
+        }
+        p
+        /* ADYACENTE GENERAL (CUALQUIER HERMANO)*/
+
+        /* DESCENDIENTE CONTIGUO*/
+        div>p{
+            text-transform: uppercase; /*subrayar*/
+        }
+        /* DESCENDIENTE GENERAL*/
+        div p{
+            text-shadow: 1px 1px;
+        }
+        section{
+            text-decoration: overline;/*Uno o más de los siguientes valores y en cualquier orden*/
+        }
+        /********ESPECIFICIDAD********/
+    </style>
+</head>
+<body class="texto">
+    <div></div>
+    <div></div>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur corrupti placeat magnam deserunt culpa voluptas quidem iusto hic soluta minus ut accusamus expedita, possimus cum aperiam eos. Corrupti, quidem doloribus!</p>
+    <section class="flexBox">
+        <img class="foto" src="img/google.png" alt="logotipo"> 
+        <img class="foto" src="img/imagen1.png" alt="fotito">
+        <img class="foto" src="img/yahoo.jpg" alt="">
+        <img class="foto" src="img/google.png" alt="">
+        <img class="foto" src="img/imagen1.png" alt="">
+    </section>
+    <div>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloremque ullam sunt culpa ipsum laborum ipsa optio ex fuga quia numquam impedit, dolore harum fugit nostrum modi, quibusdam, labore molestiae dolorum?</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloremque ullam sunt culpa ipsum laborum ipsa optio ex fuga quia numquam impedit, dolore harum fugit nostrum modi, quibusdam, labore molestiae dolorum?</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloremque ullam sunt culpa ipsum laborum ipsa optio ex fuga quia numquam impedit, dolore harum fugit nostrum modi, quibusdam, labore molestiae dolorum?</p>
+    </div>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestias iure quam totam assumenda eligendi nihil nostrum cumque, quibusdam rem omnis illo, dolore ipsa voluptatem perspiciatis possimus pariatur voluptatum? Est, maxime.</p>
+
+</body>
+</html>

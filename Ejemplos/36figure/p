@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FIGURE Y FIGCAPTION</title>
+    <link rel="stylesheet" href="css/reset23.css">
+    <style>
+        header {
+            width: 100vw;
+            min-height: 15vh;
+            background-color: slategray;
+        }
+
+        main {
+            width: 100vw;
+            display: flex;
+            /* justify-content:space-evenly; */
+        }
+
+        div {
+            width: 40%;
+            padding: 0.5rem;
+            border: solid slategray;
+            border-radius: 25px;
+
+        }
+
+        figure {
+            width: 40%;
+            height: 50vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            border: solid slategray;
+            border-radius: 25px;
+            align-items: center;
+        }
+
+        img {
+            height: 60%;
+            /* padding: 1rem; */
+        }
+
+        figcaption {
+            font-size: 0.5rem;
+            padding: 0.2rem;
+            width: fit-content;
+            /* height: 10%; */
+            background-color: black;
+            color: white;
+            border-radius: 25px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+
+    </header>
+    <main>
+        <div>
+            <h1>FIGURE</h1>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nulla autem, magnam sapiente eligendi sint a
+                aut minus similique doloribus exercitationem officia, modi est ex beatae laudantium asperiores minima
+                pariatur ducimus.
+                Nesciunt facilis quisquam blanditiis aliquam nam voluptatibus! Dolorem nesciunt odit facere. Unde iusto
+                aperiam optio facere accusantium suscipit voluptas expedita reiciendis consequuntur, beatae repellat
+                inventore cupiditate doloremque fugit, qui eaque!</p>
+        </div>
+        <figure>
+            <img src="/img/LogoCoreCoders.jpg" alt="Logotipo Coders">
+            <figcaption>MI LOGOTIPO BONITO</figcaption>
+        </figure>
+
+    </main>
+</body>
+
+</html>

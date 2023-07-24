@@ -1,0 +1,24 @@
+#pIntroSW{
+    /* background-color: transparent; */
+    width: 80%;
+    color: gold;
+    line-height: 2.8rem;
+    font-family: sans-serif;
+    font-size: calc(1rem + 5vh);
+    font-weight: 900;
+    letter-spacing: 0.2rem;
+    word-spacing: 0.1rem;
+    text-align: center;
+    text-shadow: 1px 1px black;
+    margin: auto;
+    /* LE DA LA VUELTA AL TEXTO */
+    /* transform: scale(1, -1); */
+
+
+}
+#pIntroSW:hover{
+    
+    transform: perspective(220px) rotateX(35deg) ;
+    transition: all 5s ease-in-out;
+
+}

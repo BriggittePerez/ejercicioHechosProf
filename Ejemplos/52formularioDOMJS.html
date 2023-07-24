@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario DOMJS</title>
+    <script>
+        //MUESTRA EL FORMULARIO
+        function muestraForm(){
+            document.getElementById('miForm').style.visibility="visible";
+            }
+        // OCULTA EL FORMULARIO
+        function ocultaForm(){
+            document.getElementById('miForm').style.visibility="hidden";
+        }
+        // CAMBIAR COLOR DE FONDO DEL FORMULARIO
+        function cambiarFondo(){
+            document.getElementById('miForm').style.backgroundColor="coral";
+        }
+        // CAPTURA TEXTO
+        function capturaText(){
+            document.getElementById('miVisor').value= document.getElementById('miUsuario').value;
+        }
+        function cambiarFondo(){
+            document.getElementById('miVisor').style.color= "green";
+        }
+
+
+        
+    </script>
+</head>
+<body>
+    <fieldset>
+        <input type="button" value="on" onclick="muestraForm()">
+        <input type="button" value="off" onclick="ocultaForm()">
+        <input type="button" value="Fondo" onclick="cambiarFondo()">
+    </fieldset>
+
+    <form action="" method="get" id="miForm">
+        <label for="txtUser">Usuario:&nbsp;</label>   
+        <input type="text" name="txtUser" placeholder="Nombre del usuario" size="15" id="miUsuario" required>
+        <label for="pswUser">Password</label>   
+        <input type="password" name="pswUser" placeholder="Contraseña" size="10" required>  
+    </form>
+    
+    <fieldset>
+        <input type="button" onclick="capturaText()" value="lee codigo input text">
+        <input type="button" >
+        <label for="visor">Visor</label>
+        <input type="text" id="miVisor" value="">
+    </fieldset>
+    
+</body>
+</html>

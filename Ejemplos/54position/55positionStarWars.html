@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>POSITION STAR WARS</title>
+    <link rel="stylesheet" href="reset23.css">
+    <link rel="stylesheet" href="css/pIntroSW.css">
+    <style>
+    .batman{
+        width: 100vw;
+    }
+    body{
+         /* DESACTIVAMOS LA BARRA DE SCROLL HORIZONTAL */
+        overflow-x: hidden;
+    }
+    #robin1{
+        position: relative;
+        top: 200px;
+        left: 550px;
+        color:aliceblue;
+        background-color: black ;
+        width: 150px;
+        height: 150px;
+
+    }
+    #robin1:hover{
+        position: relative;
+        top: 100px;
+        left: 400px;
+        /* ESTOS ESTILOS CAMBIAN */
+        color: rgba(0,0,0,0);
+        font-size: 2rem;
+        background-color: white ;
+        border-radius:50%;
+        transition: all 2s ease;
+    }
+    #robin2{
+        background-color: lightgrey ;
+        height: 10vh;
+        position: fixed;
+        top:0px;
+        z-index: 1000;
+    }
+    #robin3{
+        position:relative;
+        top:-100px;
+        height: 200vh;
+        background-image: url('img/TAGS.jpg');
+        background-position: center center;
+        background-size: cover;
+        background-attachment: fixed;
+
+    }
+    #robin4{
+        /* background-color: transparent; */
+        height: 0.1vh;
+        position: relative;
+        top: -110vh;
+        
+
+    }
+    #robin5{
+        background-color: lightgrey;
+        height: 10vh; 
+        position: fixed;
+        bottom: 0px;
+    }
+
+    section{
+        width: 100%;
+    }
+    .menuOculto{
+        background-color: grey;
+        width: 140px;
+        height:100px;
+        position:relative;
+        left:-70px;
+        text-align: center;
+        z-index: 5000;
+    
+    }
+    .menuOculto:hover{
+        background-color: lightgrey;
+        left:0px;
+        transition: all 1.5s ease;
+    
+    }
+    </style>
+</head>
+<body>
+    <div class="batman" id="robin1">PRE-CABECERA</div>
+    <div class="menuOculto">MENU OCULTO</div>
+    <div class="batman" id="robin2">CABECERA</div>
+    <div class="batman" id="robin3">SECCION 1</div>
+    <div class="batman" id="robin4">
+            <p id="pIntroSW">Nos encontramos en un
+                periodo de guerra civil. Las
+                naves espaciales rebeldes,
+                atacando desde una base
+                oculta, han logrado su 
+                primera victoria contra
+                el malvado Imperio
+                Galáctico.</p>
+    </div>
+    <div class="batman" id="robin5">PIE</div>
+    
+</body>
+</html>

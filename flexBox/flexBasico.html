@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FLEX BASICO</title>
+<style>
+    body{
+        margin: 0;
+       
+    }
+    #cont1{
+        width: 80vw;
+        height: 25vh;
+        background-color: lightslategray;
+        margin: auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        flex-direction: row;
+    }  
+    .caja1{
+        width: 20%;
+        height: 20%;
+        background-color: blueviolet;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+    }
+    ul{
+      text-align: center;
+    }
+
+</style>
+</head>
+
+<body>
+    <div id="cont1">
+        <div class="caja1">
+        <ul>
+            <li>1</li>
+            <li>2</li>
+            <li>3</li>
+            <li>4</li>
+        </ul></div>
+        <div class="caja1">2</div>
+        <div class="caja1">3</div>
+        <div class="caja1">4</div>
+    </div>
+</body>
+</html>

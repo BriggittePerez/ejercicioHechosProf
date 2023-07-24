@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Query</title>
+    <style>
+        body{
+            margin: 0;
+            box-sizing:border-box;
+        }
+        .cont{
+            display: flex;
+            width: 100vw;
+            height: 100vh;
+        }
+        .box{
+            border: 10px solid red;
+            background-color: blue;
+            margin: auto;
+            width: 90%;
+            height: 45vh;
+
+        }
+        @media(min-width:800px){
+            .cont{
+                display: flex;
+                flex-wrap: wrap;
+            }
+            .box{
+                width: 47.5vw;
+                
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="cont">
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus consequatur deleniti ab atque sit libero doloribus, corporis ea quidem et autem dolore eius! Et consequatur, sunt tempora sit nulla at.
+    Quae labore voluptatibus sapiente recusandae sit maiores eius ipsum placeat repellendus natus qui, velit consectetur laborum error quisquam odit. Minus corporis voluptatum, officia ex similique eius provident repellendus? Quisquam, placeat.
+    Exercitationem eius dolores qui obcaecati praesentium nostrum harum nobis beatae molestiae quod. Corrupti quibusdam ab non illo recusandae ad, fuga doloremque vel cumque necessitatibus consectetur repellendus eum. Dolorem, ex mollitia!
+    Ex adipisci rem quia dolorem similique suscipit consectetur voluptatum facilis debitis pariatur, minus mollitia hic sit, iusto eaque, soluta eius repellat asperiores. Voluptatum temporibus ratione magnam omnis alias, mollitia aperiam.
+    Impedit dolorum saepe earum commodi quasi quam qui incidunt mollitia fugit enim, libero ea quas sed provident totam at tenetur dolorem optio possimus neque porro. Nobis cumque atque aliquam ex?</p>
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario JS</title>
+    <style>
+        .tx{
+            border: 2px dotted blue;
+            color: orange;
+        }
+        .tx:hover{
+            text-shadow: 2px 2px grey, 2px 2px coral, 2px 2px red, 2px 2px indigo;
+            box-shadow: 5px 5px 10px blue;
+            border-radius: 15px;
+            padding: 0.2rem;
+        }
+    </style>
+</head>
+<body>
+    <form action="" method="get">
+        <legend>MI FORMULARIO</legend>
+        <label for="txtEscribe">User: &nbsp;</label>
+        <input type="text" name="txtEscribe" placeholder="escribe tu mail aqui" size="15" minlength="4" maxlength="10">
+        <hr>
+        <label for="pswLoging">Password:&nbsp;</label>
+        <input type="password" name="pswLogin" placeholder="escribe tu password" size="15" minlength="4" maxlength="8">
+        <hr>
+        <label for="numEdad">Edad</label>
+        <input type="number" name="numEdad" value="18" min="18" max="65">
+        <label for="mailCorreo">Correo Electronico:&nbsp;</label>
+        <input type="email" name="mailCorreo">
+        <input type="checkbox">
+        <input type="radio">
+        <select name="" id="">
+            <option value="">Opcion 1</option>
+            <option value="">Opcion 2</option>
+        </select>
+        <input type="color">
+        <input type="range" step="5" value="0">
+        <input type="reset" value="reset">
+
+    </form>
+
+    
+</body>
+</html>

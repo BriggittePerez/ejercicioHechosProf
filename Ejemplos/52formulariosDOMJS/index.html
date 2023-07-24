@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORMULARIO ACCESO DOM JS</title>
+    <script>
+        function cambiarFondo(){
+
+            document.getElementById('usuario').style.backgroundColor="yellow";
+
+        }
+
+        function capturaTexto(){
+            
+            document.getElementById('visor').value = document.getElementById('usuario').value;
+
+        }
+
+        function muestraForm(){
+            
+            document.getElementById('miForm').style.visibility="visible";
+
+        }
+
+        function desapereceForm(){
+            
+            document.getElementById('miForm').style.visibility="hidden";
+
+        }
+
+        function colorFondo(){
+            
+            document.getElementById('fondoBoton').style.backgroundColor="aqua";
+
+        }
+    </script>
+
+    <style>
+        h1:hover{
+            color: aqua;
+            font-size: 200;
+            
+        }
+    </style>
+</head>
+<body>
+
+    <input type="button" value="ON" onclick="muestraForm()" >
+    <input type="button" value="OFF" onclick="desapereceForm()" >
+    <input type="button" value="fondo" id="fondoBoton" onclick="colorFondo()" >
+
+
+    <form action="" method="get" id="miForm">
+        <fieldset>
+            <label for="txtUser">USUARIO:&nbsp;</label>
+            <input type="text" name="txtUser" id="usuario" placeholder="Nombre del usuario..." size="15" required>
+            <hr>
+            <label for="pswLogin">LOGIN:&nbsp;</label>
+            <input type="password" name="pswLogin" id="clave" placeholder="Contraseña..." size="10" required>
+        </fieldset>
+        <input type="button" value="PULSAR!!!" onclick="cambiarFondo()">
+        <input type="button" value="LEE CODIGO INPUT TEXT" onclick="capturaTexto()">
+        <label for="txtResultado">VISOR:&nbsp;</label>
+        <input type="text" name="txtResultado" id="visor">
+        <hr>
+        <fieldset id="seccionEnviar">
+            <input type="submit" value="ENVIAR">
+            <input type="reset" value="BORRAR">
+        </fieldset>
+    </form>
+
+    <h1>Briggitte</h1>
+    
+    
+</body>
+<script>
+
+
+
+        
+</script>
+</html>
